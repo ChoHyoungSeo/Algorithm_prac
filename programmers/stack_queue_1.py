@@ -22,6 +22,6 @@ def solution(progresses, speeds):
         i += 1
 
     ans_dict = dict(Counter(ans_lis).most_common(len(progresses)))
-    for num, ans_num in enumerate(sorted(ans_dict.items())):
+    for _, ans_num in enumerate(sorted(ans_dict.items())):
         answer.append(ans_num[1])
     return answer
