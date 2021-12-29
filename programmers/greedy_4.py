@@ -25,8 +25,8 @@
     
 #     return answer
 
-#반대로 돌려도 똑같아 도중에 브레이크를 걸어줘도 안되네
-# binary search 를 해야하나
+#반대로 + 브레이크 안되네
+# binary 하게,,?
 # from collections import deque
 
 # def solution(people, limit):
