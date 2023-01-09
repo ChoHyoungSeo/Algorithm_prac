@@ -17,6 +17,25 @@
 #     for i in range(len(ans)):
 #         print(ans[i], sep = '\n')
 
+#264ms
+
+# nums = [x+1 for x in range(10000)]
+# nonSelf = []
+
+# for num in nums:
+#   num = str(num)
+#   tmp = []
+#   for i in range(len(str(num))):
+#     tmp.append(int(num[i]))
+#   nonSelf.append((sum(tmp)+int(num)))
+
+# answer = set(nums) - set(nonSelf)
+# for ans in sorted(answer):
+#     print(ans)
+
+#56ms
+
+
 nums = [x+1 for x in range(10000)]
 nonSelf = []
 
@@ -27,6 +46,6 @@ for num in nums:
     tmp.append(int(num[i]))
   nonSelf.append((sum(tmp)+int(num)))
 
-answer = set(nums) - set(nonSelf)
-for ans in sorted(answer):
-    print(ans)
+answer = list(set(nums) - set(nonSelf))
+answer.sort()
+print(*answer, sep="\n")
