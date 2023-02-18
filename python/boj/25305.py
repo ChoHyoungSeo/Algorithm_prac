@@ -1,0 +1,4 @@
+_, prize_num = map(int, input().split())
+scores = list(map(int, input().split()))
+
+print(sorted(scores, reverse=True)[prize_num-1])
