@@ -1,4 +1,4 @@
-_, chance = map(int, input().split())
+tot, chance = map(int, input().split())
 nums = [x for x in range(tot+1)]
 
 for _ in range(chance):
