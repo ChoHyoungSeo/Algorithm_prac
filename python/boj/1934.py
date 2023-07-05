@@ -8,8 +8,8 @@ def lcm(a: int, b: int) -> int:
     return a*b // gcd(a,b)
 
 if __name__ == '__main__':
-    a = int(input())
+    total = int(input())
 
-    for i in range(a):
+    for _ in range(total):
         a, b = map(int, input().split())
         print(lcm(a,b))
