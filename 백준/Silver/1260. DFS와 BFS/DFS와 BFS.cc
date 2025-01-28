@@ -8,6 +8,9 @@ void dfs(int node, vector<vector<int>>& graph, vector<bool>& visited);
 void bfs(int start, vector<vector<int>>& graph, vector<bool>& visited);
 
 int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr); cout.tie(nullptr);
+    
     int n, m, start;
     cin >> n >> m >> start;
 
